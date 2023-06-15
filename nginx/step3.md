@@ -69,11 +69,11 @@ Create an `index.html` file.
   <title>Hello!</title>
 </head>
 <body>
-  <h1>⭐⭐⭐ Ansible Rocks ⭐⭐⭐</h1>
+  <h1>Ansible Rocks</h1>
   <figure>
-    <img src="penguin.jpg" />
+    <img src="parrot.jpg" />
     <figcaption>
-      <a href="https://commons.wikimedia.org/wiki/File:Penguin_in_Antarctica_jumping_out_of_the_water.jpg">Christopher Michel</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons
+      <a href="https://media.tenor.com/8AqUPOC5GMgAAAAi/parrot-party.gif">Party Parrot</a>
     </figcaption>
   </figure>
 </body>
@@ -90,10 +90,10 @@ Add the following at the end of the `tasks` list, just before the `handlers` sec
         dest: /srv/www/index.html
         src: index.html
 
-    - name: Download an image of a penguin
+    - name: Download an image of a parrot
       get_url:
-        dest: /srv/www/penguin.jpg
-        url: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Penguin_in_Antarctica_jumping_out_of_the_water.jpg/640px-Penguin_in_Antarctica_jumping_out_of_the_water.jpg
+        dest: /srv/www/parrot.jpg
+        url:  https://media.tenor.com/8AqUPOC5GMgAAAAi/parrot-party.gif
 
 ```{{copy}}
 
