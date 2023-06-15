@@ -1,0 +1,40 @@
+{
+  "title": "Deploy Nginx with Ansible",
+  "description": "Deploy upstream Nginx with Ansible on Ubuntu 20:04",
+  "difficulty": "Beginner",
+  "time": "60 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Install Ansible using Mambaforge",
+        "text": "step1.md",
+        "code": "setup.sh"
+      },
+      {
+        "title": "Install Nginx with Ansible",
+        "text": "step2.md"
+      },
+      {
+        "title": "Configure Nginx and add a webpage",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "*", "target": "~/", "chmod": "+w"}
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "interface": {
+    "layout": "ide"
+  }
+}
